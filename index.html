@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Digital Systems | Architect-led AEM delivery</title>
+<meta name="description" content="AK Digital Systems supplies architect-led Adobe Experience Manager (AEM) developers and teams from India for agencies and enterprise teams: AEM as a Cloud Service migrations, Edge Delivery Services builds and Adobe integrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B2433'/%3E%3Crect x='6' y='6' width='20' height='20' fill='none' stroke='%232F6FEB' stroke-width='2' stroke-dasharray='3 2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#F3F5F7;
+  --surface:#FFFFFF;
+  --ink:#1B2433;
+  --muted:#5A6474;
+  --line:#D9DEE5;
+  --author:#2F6FEB;
+  --author-soft:#E6EEFD;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141A24; --surface:#1A2230; --ink:#E8ECF2; --muted:#9AA4B4; --line:#2B3546; --author:#6D9BF5; --author-soft:#1E2B44;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141A24; --surface:#1A2230; --ink:#E8ECF2; --muted:#9AA4B4; --line:#2B3546; --author:#6D9BF5; --author-soft:#1E2B44;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "Schibsted Grotesk",system-ui,sans-serif;}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--author);outline-offset:3px;border-radius:2px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+@media (max-width:600px){.wrap{padding:0 1rem}}
+
+/* header */
+.top{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+.brand{font-weight:700;font-size:1.05rem;text-decoration:none;letter-spacing:-.01em}
+.top a.mail{color:var(--muted);text-decoration:none;font-size:.95rem}
+.top a.mail:hover{color:var(--author)}
+
+/* hero: the page shown the way an AEM author sees it */
+.hero{padding:3.5rem 0 4.5rem}
+.cmp{position:relative;border:1.5px dashed transparent;padding:1.25rem 1.25rem 1.5rem;margin:-1.25rem;transition:border-color .5s ease, background-color .5s ease}
+.cmp .tag{position:absolute;top:-0.8rem;left:1rem;background:var(--author);color:#fff;font-size:.75rem;font-weight:600;padding:.15rem .5rem;border-radius:3px;opacity:0;transition:opacity .5s ease}
+.hero.edit .cmp{border-color:var(--author);background:var(--author-soft)}
+.hero.edit .cmp .tag{opacity:1}
+.hero h1{font-size:clamp(2.4rem,6.2vw,4.6rem);line-height:1.02;font-weight:800;letter-spacing:-.035em;margin:0;max-width:15ch}
+.hero .lede{font-size:clamp(1.1rem,2vw,1.3rem);color:var(--muted);max-width:44ch;margin:0}
+.hero .stack{display:grid;gap:3rem;max-width:52rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.btn{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;padding:.85rem 1.3rem;border-radius:4px}
+.btn:hover{background:var(--author);color:#fff}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);font:inherit;font-size:.9rem;padding:.55rem .9rem;border-radius:4px;cursor:pointer}
+.toggle[aria-pressed="true"]{border-color:var(--author);color:var(--author)}
+
+/* sections */
+section.band{border-top:1px solid var(--line);padding:4rem 0}
+.grid{display:grid;grid-template-columns:15rem 1fr;gap:2rem}
+@media (max-width:800px){.grid{grid-template-columns:1fr;gap:1.25rem}}
+h2{font-size:1.5rem;line-height:1.2;font-weight:700;letter-spacing:-.015em;margin:0}
+.side p{color:var(--muted);margin:.5rem 0 0;font-size:.95rem;max-width:24ch}
+@media (max-width:800px){.side p{max-width:none}}
+
+dl.offers{margin:0;display:grid;gap:2rem}
+dl.offers dt{font-weight:700;font-size:1.2rem;letter-spacing:-.01em}
+dl.offers dd{margin:.35rem 0 0;color:var(--muted);max-width:60ch}
+
+table.work{width:100%;border-collapse:collapse}
+table.work th{text-align:left;font-weight:600;font-size:.85rem;color:var(--muted);padding:0 1rem .6rem 0;border-bottom:1px solid var(--line)}
+table.work td{padding:1rem 1rem 1rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+table.work td:first-child{font-weight:600;width:34%}
+@media (max-width:640px){
+  table.work thead{display:none}
+  table.work tr{display:block;padding:1rem 0;border-bottom:1px solid var(--line)}
+  table.work td{display:block;border:0;padding:.15rem 0;width:auto}
+  table.work td:first-child{width:auto}
+  table.work td+td{color:var(--muted)}
+}
+
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;counter-reset:s}
+@media (max-width:800px){ol.steps{grid-template-columns:1fr}}
+ol.steps li{counter-increment:s;border-left:2px solid var(--author);padding:.1rem 0 .1rem 1rem}
+ol.steps li::before{content:"Step " counter(s);display:block;font-size:.85rem;color:var(--author);font-weight:600;margin-bottom:.35rem}
+ol.steps strong{display:block;font-size:1.1rem;margin-bottom:.3rem}
+ol.steps span{color:var(--muted)}
+
+.founder p{max-width:62ch;margin:0 0 1rem}
+.founder ul{margin:0;padding-left:1.1rem;color:var(--muted);max-width:62ch}
+.founder li{margin:.3rem 0}
+
+.contact{padding:5rem 0}
+.contact h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-.03em;max-width:20ch}
+.contact p{color:var(--muted);max-width:52ch}
+.contact a.big{display:inline-block;margin-top:1rem;font-size:clamp(1.2rem,3.2vw,1.9rem);font-weight:700;color:var(--author);text-decoration:none;border-bottom:2px solid currentColor;word-break:break-all}
+.contact a.big:hover{color:var(--ink)}
+
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+
+@media (max-width:600px){
+  .cmp{margin:-.75rem;padding:.75rem .75rem 1rem}
+  .cmp .tag{left:.5rem}
+  .top a.mail{display:none}
+}
+@media (prefers-reduced-motion: reduce){.cmp,.cmp .tag{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">AK Digital Systems</a>
+    <a class="mail" href="mailto:arjun@akdigitalsystems.com">arjun@akdigitalsystems.com</a>
+  </header>
+</div>
+
+<main>
+  <div class="wrap">
+    <section class="hero edit" id="hero" aria-label="Introduction">
+      <div class="stack">
+        <div class="cmp"><span class="tag" aria-hidden="true">Title</span>
+          <h1>AEM developers who ship, led by an architect who checks.</h1>
+        </div>
+        <div class="cmp"><span class="tag" aria-hidden="true">Text</span>
+          <p class="lede">We give agencies and in-house teams extra Adobe Experience Manager capacity from India, with a certified AEM architect accountable for every line that goes live. Overlap with US hours is part of the deal.</p>
+        </div>
+        <div class="actions">
+          <a class="btn" href="mailto:arjun@akdigitalsystems.com?subject=AEM%20capacity">Email us about a project</a>
+          <button class="toggle" id="mode" aria-pressed="true" type="button">Author mode on</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="band" aria-labelledby="what">
+    <div class="wrap grid">
+      <div class="side"><h2 id="what">What we do</h2><p>AEM first. Adobe Analytics, Target and Campaign when the project needs them.</p></div>
+      <dl class="offers">
+        <div><dt>Extra AEM developers for your team</dt><dd>One developer or a full pod that joins your standups, works in your repos and follows your standards. Start with a single person and scale when it works.</dd></div>
+        <div><dt>Migrations to AEM as a Cloud Service</dt><dd>Assessment, code refactoring, content transfer and go-live for teams moving off AEM 6.x, with the Cloud Manager pipeline set up properly.</dd></div>
+        <div><dt>Edge Delivery Services builds</dt><dd>Document-based and Universal Editor sites built for speed, with blocks your authors can actually use.</dd></div>
+        <div><dt>An architect for the critical phase</dt><dd>Solution design, code reviews and performance or dispatcher fixes when a release is at risk.</dd></div>
+        <div><dt>AEM health check</dt><dd>A fixed-price, two-week review of code, configuration, performance and authoring, ending in a prioritised fix list.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="work">
+    <div class="wrap grid">
+      <div class="side"><h2 id="work">Recent work</h2><p>Client names are shared on a call.</p></div>
+      <table class="work">
+        <thead><tr><th scope="col">Client</th><th scope="col">What we did</th></tr></thead>
+        <tbody>
+          <tr><td>Global software company, via Adobe Consulting</td><td>Migration of a large AEM estate to AEM as a Cloud Service.</td></tr>
+          <tr><td>US asset manager, via Adobe Consulting</td><td>Solution architecture for the investor relations site on AEM.</td></tr>
+          <tr><td>International development organisation, via Adobe Consulting</td><td>Edge Delivery Services build.</td></tr>
+          <tr><td>Premium kitchen appliance brand</td><td>E-commerce integration with AEM.</td></tr>
+          <tr><td>US Adobe and commerce consultancy</td><td>Company website on AEM, plus Magento and AEM integration proofs of concept.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="how">
+    <div class="wrap grid">
+      <div class="side"><h2 id="how">How it starts</h2><p>No long contract to begin.</p></div>
+      <ol class="steps">
+        <li><strong>A 20-minute call</strong><span>You describe the project, stack and the gap in your team.</span></li>
+        <li><strong>Profiles in one working day</strong><span>Matched AEM developers or leads, screened by our architect.</span></li>
+        <li><strong>Start small</strong><span>One person for a month. Keep going, scale up or stop.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="who">
+    <div class="wrap grid">
+      <div class="side"><h2 id="who">Who runs it</h2></div>
+      <div class="founder">
+        <p>AK Digital Systems is led by Arjun Singh, a certified AEM architect with more than 15 years in digital transformation and Adobe Experience Manager. He reviews the architecture and the code on every engagement, so quality does not depend on who is on the bench that month.</p>
+        <ul>
+          <li>Adobe Certified Expert, AEM Architect</li>
+          <li>AEM as a Cloud Service, Edge Delivery Services, AEM 6.x, Adobe Experience Cloud</li>
+          <li>Earlier at Sapient, Merkle and Intelligrape</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band contact" aria-labelledby="contact">
+    <div class="wrap">
+      <h2 id="contact">Short on AEM people this quarter?</h2>
+      <p>Tell us what you are building and when it needs to ship. You will hear back within one working day.</p>
+      <a class="big" href="mailto:arjun@akdigitalsystems.com?subject=AEM%20capacity">arjun@akdigitalsystems.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 AK Digital Systems. Pune, India.</span>
+    <span>Adobe and Adobe Experience Manager are trademarks of Adobe Inc.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var hero=document.getElementById('hero'), b=document.getElementById('mode');
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function set(on){hero.classList.toggle('edit',on);b.setAttribute('aria-pressed',on);b.textContent=on?'Author mode on':'Author mode off';}
+  b.addEventListener('click',function(){set(!hero.classList.contains('edit'));});
+  if(!reduce){setTimeout(function(){set(false);},2600);}
+})();
+</script>
+</body>
+</html>
